@@ -25,6 +25,9 @@ body {
   background-color: #adf4d6;
   color: #002039;
 }
+.btn:hover{
+  background-color: #adf4d6c2;
+}
 
 
 .inputBox {
@@ -42,6 +45,12 @@ body {
   font-size: 2rem;
   margin-top: -1.8rem;
   text-align: center;
+}
+
+.vertical-line {
+  width: 4px; /* Increase the width (thickness) */
+  height: 230px; /* Increase the height */
+  background-color: #adf4d6; /* Color of the line */
 }
 
 @media (max-width: 1140px) {
@@ -84,5 +93,11 @@ body {
   .left, .right {
     width: 100%;
     text-align: center;
+  }
+}
+
+@media (max-width: 380px) {
+  .buttons{
+    margin-top: -1rem;
   }
 }

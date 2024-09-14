@@ -80,11 +80,11 @@ export default function CountdownTimer() {
   };
 
   return (
-    <section className="main w-[90%] md:w-[50%]">
-      <h1 className="text-center font-bold text-3xl">CountDown Timer</h1>
+    <section className="main w-[90%] md:w-[58%]">
+      <h1 className="text-center font-bold text-4xl">CountDown Timer</h1>
       <div className="blue-container flex flex-col md:flex-row justify-center items-center">
         {/* left side */}
-        <div className="right w-full md:w-[50%] border-r-emerald-200 md:border-r">
+        <div className="right w-full md:w-[50%]">
           <div className='left-sec font-sans h-72 flex justify-center items-center overflow-auto'>
             <div className="sec1 p-5 flex-col items-center justify-center">
               <h2 className='font-bold text-lg '>Enter Time in Seconds</h2>
@@ -107,6 +107,9 @@ export default function CountdownTimer() {
             </div>
           </div>
         </div>
+
+        {/* Vertical Line */}
+    <div className="vertical-line"></div> 
 
         {/* right side */}
         <div className="left w-full md:w-[50%]">
