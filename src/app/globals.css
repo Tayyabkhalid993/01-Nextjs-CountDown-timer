@@ -2,26 +2,86 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+body {
+  color: #adf4d6;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: #adf4d6;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+.main {
+  background-color: #002039;
+  @apply p-4 rounded-lg shadow-md;
+}
+
+.btn {
+  @apply font-bold py-1 mx-1 rounded-3xl;
+  color: #adf4d6;
+  transition: all 0.3s ease-in-out;
+  width: 80px;
+  background-color: #adf4d6;
+  color: #002039;
+}
+
+
+.inputBox {
+  margin: 2rem 0;
+  max-width: 12rem;
+  border-bottom: 0.2rem solid #adf4d6;
+}
+
+.inputBox input {
+  width: 100%;
+  padding: 10px 0;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  font-size: 2rem;
+  margin-top: -1.8rem;
+  text-align: center;
+}
+
+@media (max-width: 1140px) {
+  .btn {
+    @apply py-1 px-2 text-sm;
+    width: 60px;
+  }
+
+  .runningTime {
+    font-size: 3rem;
   }
 }
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
-}
+@media (max-width: 768px) {
+  .main {
+    @apply flex flex-col items-center;
+    height: 500px;
+    margin: 1rem 0;
+    height: 30rem;
+  }
+  
+  h1{
+    margin-top: 1rem;
+    margin-bottom: -1rem;
+  }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
+  .left-sec {
+    margin-top: -1.5rem;
+  }
+  .runningTime{
+    margin-top: -1rem;
+  }
+
+  /* Hide the vertical line on small screens */
+  .vertical-line {
+    display: none;
+  }
+
+  /* Adjust the layout for mobile */
+  .left, .right {
+    width: 100%;
+    text-align: center;
   }
 }
