@@ -117,9 +117,9 @@ export default function CountdownTimer() {
             {formateTime(timeLeft)}
           </div>
           <div className="time flex justify-center opacity-35">
-            <span>&nbsp;&nbsp;&nbsp;min</span>
+            <span>min</span>
             <span>
-              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
               sec
             </span>
           </div>
